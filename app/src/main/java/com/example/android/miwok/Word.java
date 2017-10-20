@@ -22,6 +22,16 @@ public class Word {
         mAudioTranslationID = audioTranslationID;
     }
 
+    @Override
+    public String toString() {
+        return "Word{" +
+                "mDefaultTranslation='" + mDefaultTranslation + '\'' +
+                ", mMiwokTranslation='" + mMiwokTranslation + '\'' +
+                ", mImageResourceID=" + mImageResourceID +
+                ", mAudioTranslationID=" + mAudioTranslationID +
+                '}';
+    }
+
 
     public String getDefaultTranslation() {
         return mDefaultTranslation;
@@ -38,7 +48,5 @@ public class Word {
     public int getAudioTranslationID() {
         return mAudioTranslationID;
     }
-
-
 
 }
